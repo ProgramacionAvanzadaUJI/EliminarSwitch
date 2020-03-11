@@ -44,11 +44,11 @@ public class GestorClientes {
         }
     }
 
-    public void ejecutaOpcion(OpcionesMenu opcion) {
-        opcion.ejecutaOpcion(this);
-    }
-
     public GestorClientes() {
         clientes = new HashMap<>();
+    }
+
+    public void ejecutaOpcion(OpcionesMenu opcion) {
+        opcion.ejecutaOpcion(this);
     }
 }
